@@ -6,6 +6,9 @@ import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
 import Checkout from "./Pages/Checkout";
 import Confirmed from "./Pages/Confirmed";
+import About from "./pages/About";
+import Footer from "./components/Footer";
+
 
 
 export default function App() {
@@ -19,8 +22,11 @@ export default function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/confirmed" element={<Confirmed />} />
+        <Route path="/about" element={<About />} />
+
 
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
